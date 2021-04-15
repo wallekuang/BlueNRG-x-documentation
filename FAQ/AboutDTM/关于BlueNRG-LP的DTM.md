@@ -4,13 +4,17 @@ SDK中提供了比较多的DTM工程和工程里面的不同配置，当使用DT
 
 **太长不看版本：如果不想详细看各个版本的差异，对于普通BlueNRG-355 RF测试或者作为协处理器或者其他用途，建议首选DTM中的UART_WITH_UPDATER。**
 
-![RF_test_Recommend](D:\work\2021\72_GitBlueNRGDocument\debug\FAQ\AboutDTM\RF_test_Recommend.png)
+
+![RF_test_Recommend](../../image/RF_test_Recommend.png)
+
 
 如果是BlueNRG-345 或者想深入了解各个版本之间的差异，建议查看下文。
 
 这里我们统一一下描述： 工程指的是一个Example，比方说和DTM有关的的工程有下图3个：
 
-<img src="DTM_project.png" alt="DTM_project" style="zoom:48%;" />
+
+![DTM_project](../../image/DTM_project.png)
+
 
 - DTM: 					// DTM是Full Stack
 - DTM_basic:         //  DTM 配置为Basic stack
@@ -24,7 +28,9 @@ SDK中提供了比较多的DTM工程和工程里面的不同配置，当使用DT
 
 DTM 工程里面的不同配置有如下图所示：
 
-<img src="DTM_project_group.png" alt="DTM_project_group" style="zoom:38%;" />
+
+![DTM_project_group](../../image/DTM_project_group.png)
+
 
 ### DTM 工程包括如下配置:
 

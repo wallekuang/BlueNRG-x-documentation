@@ -10,7 +10,7 @@
 
 ### Bluetooth Smart and Bluetooth Smart Ready
 
-![蓝牙协议体系类型](蓝牙协议体系类型.png)
+![蓝牙协议体系类型](../image/蓝牙协议体系类型.png)
 
 市面上的蓝牙产品从体系结构的角度来看可以分为3类：
 
@@ -28,20 +28,20 @@ Bluetooth Smart是物联网的驱动。Bluetooth Smart小工具可以通过其�
 
 
 
-![Bluetooth device shipments by the radio version](\Bluetooth device shipments by the radio version.png)
+![Bluetooth_device_shipments_by_the_radio version](../image/Bluetooth_device_shipments_by_the_radio_version.png)
+
 
 ## 蓝牙技术分类
 
 #### Bluetooth BR/EDR  （传统蓝牙）
 
-​		传统蓝牙，下图为BR/EDR协议栈的体系结构，本文主要介绍BLE，所以后文将很少有传统蓝牙的介绍。![BR_EDR_stack](D:\work\2021\72_GitBlueNRGDocument\debug\BLE\BR_EDR_stack.png)
+​		传统蓝牙，下图为BR/EDR协议栈的体系结构，本文主要介绍BLE，所以后文将很少有传统蓝牙的介绍。![BR_EDR_stack](../image/BR_EDR_stack.png)
 
 #### Bluetooth Low Energy 
 
 ​		低功耗蓝牙协议栈的体系结构如下：
 
-<img src="C:\Users\Lucien\AppData\Roaming\Typora\typora-user-images\image-20210331113720888.png" alt="image-20210331113720888" style="zoom:67%;" />
-
+![BLE_stack](../image/BLE_stack.png)
 
 
 BLE的体系结构简单很多，协议栈主要分为两层，一层是Host，一层是Control，连接Host和Control的是HCI接口。
@@ -50,8 +50,7 @@ BLE的体系结构简单很多，协议栈主要分为两层，一层是Host，�
 
 #### Bluetooth Mesh 
 
-<img src="Mesh_stack.png" alt="Mesh_stack" style="zoom:58%;" />
-
+![Mesh_stack](../image/Mesh_stack.png)
 ​	 Mesh 是基于BLE协议之上的一个协议， 拓展了BLE 的能力。早期手机平板等设备，也可以通过代理接入Mesh网络。
 
 
@@ -64,11 +63,11 @@ BLE的体系结构简单很多，协议栈主要分为两层，一层是Host，�
 
 ​	     
 
-<img src="Modulation.png" alt="Modulation" style="zoom:38%;" />
+<img src="../image/Modulation.png" alt="Modulation" style="zoom:50%;" />
 
 #### 信道
 
-​		![BLE_channel](BLE_channel.png)
+​		![BLE_channel](../image/BLE_channel.png)
 
 传统蓝牙BR/EDR,有79个窄信道。 而低功耗蓝牙，使用40个无线信道。3个广播信道（初级广播），37个数据信道。Radio每次发送数据只能往一个信道里面发送，大多数芯片的Radio（接收方）每次也只能扫描一个信道的数据。
 
@@ -84,7 +83,7 @@ BLE 的广播在没有引入扩展广播之前，是一个比较简单的概念�
 
 有广播，则有扫描，那么BLE 如何扫描的呢。
 
-<img src="ble-scan.PNG" alt="ble-scan" style="zoom:100%;" />
+![ble-scan](../image/ble-scan.png)
 
 广播间隔，扫描间隔，扫描窗口。
 
@@ -94,7 +93,7 @@ BLE 的广播在没有引入扩展广播之前，是一个比较简单的概念�
 
 广播只能单方向只发送数据，要快速可靠双向通信，必须要建立连接（当然，你也可以即广播也扫描不建立连接实现双向通信，但这样效率不高）。那么BLE是如何建立连接呢？首先得知道啥时可连接广播。下图为Radio TX 或者RX 活跃时，则拉高对应的IO口, 然后用逻辑分析仪捕获的瞬间图。
 
-![可连接广播与不可连接广播](可连接广播与不可连接广播.png)
+![可连接广播与不可连接广播](../image/可连接广播与不可连接广播.png)
 
 由上图可以看到，可连接广播，在Radio层面上每次在一个信道上发送完后，会开一个短暂的RX，如果此时，有其他设备发送连接请求时，则瞬间两者就建立连接了。然后
 

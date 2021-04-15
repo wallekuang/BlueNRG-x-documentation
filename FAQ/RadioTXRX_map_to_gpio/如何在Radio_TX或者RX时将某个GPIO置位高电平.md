@@ -4,7 +4,7 @@
 
 
 
-# 增加PA官方参考资料
+# 增加外部PA官方参考资料
 
 [AN5574: Driving an external RF front-end with the BlueNRG-LP](https://www.st.com/content/ccc/resource/technical/document/application_note/group1/10/b1/ba/ab/ae/53/49/bc/DM00745431/files/DM00745431.pdf/jcr:content/translations/en.DM00745431.pdf)
 
@@ -104,18 +104,19 @@ static void DEBUG_GPIO_Init(void)
 
    将上述代码添加在BLE_Throughput_main.c中，并且在初始化中调用，分别编译Server和Client工程后，分别烧录到两块板子上，并且用逻辑分析仪捕获对应的GPIO。
 
-<img src="RadioTXRX.jpg" alt="RadioTXRX" style="zoom:30%;" />
+
+![RadioTXRX](../../image/RadioTXRX.jpg)
 
 ## 测试结果如下:
 
 ### 广播时
 
-当只让slave运行时，只有广播数据，第一个广播为单纯的广播数据没有遇到扫描者，第二个是当有人扫描时的广播波形。
+当只让slave运行时，只有广播数据，第一个广播为单纯的广播数据没有遇到扫描者，第二个是当有扫描在扫描时的广播波形。
 
-![adv](adv.png)
+![adv](../../image/adv.png)
 
 ### 连接时
 
 ​		连接上后，不更改其他参数，默认是按照23字节的MTU，1M PHY，通信速率大致是220kbps。
 
-![RadioTXRX](RadioTXRX.jpg)
+![RadioTXRX](../../image/RadioTXRX.jpg)
