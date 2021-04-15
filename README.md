@@ -15,5 +15,3 @@
 
 - [培训资料](培训资料/README.md)
 
-
-![test](https://github.com/wallekuang/BlueNRG-x-documentation/blob/main/image/BLE_channel.png)
