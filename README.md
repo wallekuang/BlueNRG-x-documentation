@@ -1,9 +1,7 @@
 # BlueNRG-x-documentation
 
 
-- [快速开始](Quickstart/README.md)
-
-- [搭建开发环境](Quickstart/README.md)
+- [快速开始与开发环境搭建](Quickstart/README.md)
 
 - [硬件设计和测试](硬件设计和测试/README.md)
 
