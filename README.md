@@ -36,11 +36,11 @@
 
   - [开源改进的版本的Flasher_utility下载工具](https://github.com/wallekuang/MP-Tool)
 - [FAQ](FAQ/README.md)
-- [如何区分不同的DTM工程与配置](FAQ/AboutDTM/关于BlueNRG-LP的DTM.md)
+
+  - [如何区分不同的DTM工程与配置](FAQ/AboutDTM/关于BlueNRG-LP的DTM.md)
   - [如何查找QDID](FAQ/如何查找QDID.md)
   - [BlueNRG-x系列如何简单延时](FAQ/BlueNRG系列如何简单的延时.md)
   - [如何安装GNU工具链](FAQ/安装GNU工具链/如何安装GNU工具链.md)
   - [BlueNRG-1-2睡眠模式下使用RTC](FAQ/BlueNRG-1-2睡眠模式下使用RTC.md)
-  - 
 - [培训资料](培训资料/README.md)
 - [2021_04_08_level1_BlueNRG系列培训资料](培训资料/2021_04_08_level1)
