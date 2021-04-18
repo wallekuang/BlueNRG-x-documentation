@@ -1,8 +1,8 @@
 # BlueNRG-x-documentation
 
-## 前言
-- 
-  文档主要是用markdown格式编写的，可以使用VScode或者Typora等支持markdown格式的编辑器打开。
+## 前言 
+- 建议尽可能使用最新版本的SDK。
+- 文档主要是用markdown格式编写的，可以使用VScode或者Typora等支持markdown格式的编辑器打开。
 - 建议大陆用户将整个仓库clone下来查看，部分图片信息如果没有科学上网
   或者没有更改host，否则无法直接在线加载查看到图片信息。
 - 下载操作方法：git clone https://github.com/wallekuang/BlueNRG-x-documentation.git
