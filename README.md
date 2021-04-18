@@ -19,8 +19,8 @@
 
 
 - [硬件设计和测试](硬件设计和测试/README.md)
-- [BLE协议相关知识](BLE/README.md)
-- [BLE协议栈基础](BLE/BLE协议栈基础.md)
+- [BLE协议基础](BLE/README.md)
+- [BLE协议栈进阶](BLE/BLE协议栈基础.md)
   - 数据扩展包
   - BLE安全
   - 蓝牙5.0之扩展广播
@@ -43,4 +43,4 @@
   - [如何安装GNU工具链](FAQ/安装GNU工具链/如何安装GNU工具链.md)
   - [BlueNRG-1-2睡眠模式下使用RTC](FAQ/BlueNRG-1-2睡眠模式下使用RTC.md)
 - [培训资料](培训资料/README.md)
-- [2021_04_08_level1_BlueNRG系列培训资料](培训资料/2021_04_08_level1)
+  - [2021_04_08_level1_BlueNRG系列培训资料](培训资料/2021_04_08_level1)
