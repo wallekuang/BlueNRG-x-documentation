@@ -4,7 +4,20 @@
 > 适用范围：BlueNRG-LP 软件， BlueNRG-1/2的也可以参考此方法
 > 下文主要描述使用BlueNRG-LP SDK进行开发时,如何搭建使用静态协议栈环境。
 
+ BlueNRG-1/2使用静态协议栈参考Demo：
+
+https://github.com/wallekuang/BlueNRG-1-2_Static_Static
+
+
+
+ BlueNRG-LP使用静态协议栈参考Demo：
+
+将在SDK1.0.1更新后再更新。
+
+
+
 # 背景
+
 > 在使用BlueNRG-LP调试的时候，有时遇到Flash空间不够的问题，如果应用还需要包含OTA，如果OTA中又包含协议栈，为了解决Flash空间不够这个问题，我推荐使用静态协议栈的方式，节省空间，加速OTA的升级过程。
 
 # 知识背景须知
