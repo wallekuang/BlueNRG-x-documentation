@@ -35,7 +35,7 @@
   - 蓝牙5.0之扩展广播
 - [常见应用](Application/README.md)
   <details>
-  <summary>常见应用</summary>
+  <summary>常见应用展开</summary>
 
   - [如何优化BlueNRG-x的功耗](Application/功耗优化/如何优化BlueNRG-x的功耗.md)
   - [基于BLE多连接的星型网络应用](Application/Multiple_connection/基于BLE多连接的星型网络应用.md) 
@@ -51,7 +51,7 @@
   - [开源改进的版本的Flasher_utility下载工具](https://github.com/wallekuang/MP-Tool)
 - [FAQ](FAQ/README.md)
   <details>
-   <summary>FAQ</summary>
+   <summary>FAQ展开</summary>
 
   - [如何区分不同的DTM工程与配置](FAQ/AboutDTM/关于BlueNRG-LP的DTM.md)
   - [如何查找QDID](FAQ/如何查找QDID.md)
