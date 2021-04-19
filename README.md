@@ -51,5 +51,6 @@
   - [BlueNRG-x系列如何简单延时](FAQ/BlueNRG系列如何简单的延时.md)
   - [如何安装GNU工具链](FAQ/安装GNU工具链/如何安装GNU工具链.md)
   - [BlueNRG-1-2睡眠模式下使用RTC](FAQ/BlueNRG-1-2睡眠模式下使用RTC.md)
+  - [使用BlueNRG-345注意事项](FAQ/使用BlueNRG-345注意事项.md)
 - [培训资料](培训资料/README.md)
   - [2021_04_08_level1_BlueNRG系列培训资料](培训资料/2021_04_08_level1)
