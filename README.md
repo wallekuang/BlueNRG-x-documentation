@@ -34,6 +34,8 @@
   - BLE安全
   - 蓝牙5.0之扩展广播
 - [常见应用](Application/README.md)
+  <details>
+  <summary>常见应用</summary>
 
   - [如何优化BlueNRG-x的功耗](Application/功耗优化/如何优化BlueNRG-x的功耗.md)
   - [基于BLE多连接的星型网络应用](Application/Multiple_connection/基于BLE多连接的星型网络应用.md) 
@@ -41,10 +43,15 @@
   - [BlueNRG系列的OTA](Application/OTA/BlueNRG-x系列官方OTA操作简介.md)
   - BlueNRG系列协处理器介绍
   - BlueNRG系列中使用FreeRTOS
+
+  </details>
+
 - [工具使用](工具使用/README.md)
 
   - [开源改进的版本的Flasher_utility下载工具](https://github.com/wallekuang/MP-Tool)
 - [FAQ](FAQ/README.md)
+  <details>
+   <summary>FAQ</summary>
 
   - [如何区分不同的DTM工程与配置](FAQ/AboutDTM/关于BlueNRG-LP的DTM.md)
   - [如何查找QDID](FAQ/如何查找QDID.md)
@@ -54,5 +61,13 @@
   - [如何在SDK中适配使用BlueNRG-345](FAQ/使用BlueNRG-345注意事项.md)
   - [如何设定BlueNRG系列广播数据](FAQ/如何设定广播数据.md)
   - [BlueNRG-LP如何在Radio_TX或者RX时将某个GPIO置位高电平_or_如何软件配置控制外部PA的TX和RX](FAQ/RadioTXRX_map_to_gpio/如何在Radio_TX或者RX时将某个GPIO置位高电平.md)
+
+  </details>
+
 - [培训资料](培训资料/README.md)
   - [2021_04_08_level1_BlueNRG系列培训资料](培训资料/2021_04_08_level1)
+
+
+
+
+
