@@ -12,7 +12,9 @@
 - 文档主要是用markdown格式编写的，可以使用VScode或者Typora等支持markdown格式的编辑器打开。
 - 建议大陆用户将整个仓库clone下来查看，部分图片信息如果没有科学上网
   或者没有更改host，可能无法直接在线加载查看到图片信息。
-- 下载操作方法：git clone https://github.com/wallekuang/BlueNRG-x-documentation.git
+- 下载与更新：
+  - 下载: git clone https://github.com/wallekuang/BlueNRG-x-documentation.git
+  - 更新:  git pull
 - 如果文档查看相关文档仍然无法解决您的问题，或者想进一步交流，也可以直接发邮件到： lucien.kuang@st.com  或者在GitHub的此仓库上提issues
 - 有问题也可发表到论坛： http://bbs.eeworld.com.cn/forum-262-1.html 也会有工程师进行解答
 
