@@ -28,10 +28,10 @@ typedef enum {
 强烈建议使用官方默认的控制睡眠软件框架如下：
 
 ```c++
-VTIMER_HandleType TimerHandle;
+// 【option】 VTIMER_HandleType TimerHandle;
 WakeupSourceConfig_TypeDef wakeupIO = {0, WAKEUP_PA8, 0};
 PowerSaveLevels stopLevel/* Starts the virtual timer  with timeout 2 sec. */ 
-HAL_VTimerStart_ms(TimerHandle, 2000);
+// 【option】 HAL_VTimerStart_ms(TimerHandle, 2000);
 while(1) 
 /*main loop*/
 {   
