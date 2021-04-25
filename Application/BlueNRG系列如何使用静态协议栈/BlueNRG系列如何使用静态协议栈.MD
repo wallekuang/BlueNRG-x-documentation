@@ -3,8 +3,12 @@
 # 前言
 > 适用范围：BlueNRG-LP 软件， BlueNRG-1/2的也可以参考此方法
 > 下文主要描述使用BlueNRG-LP SDK进行开发时,如何搭建使用静态协议栈环境。
+>
+>  如果你对BlueNRG-x系列的存储分布还不是那么熟悉，建议您阅读 [BlueNRG系列存储分析(Flash_and_RAM)](./BlueNRG系列存储分析(Flash_and_RAM).md)
 
- BlueNRG-1/2使用静态协议栈参考Demo：
+ 
+
+BlueNRG-1/2使用静态协议栈参考Demo：
 
 https://github.com/wallekuang/BlueNRG-1-2_Static_Static
 
@@ -12,30 +16,33 @@ https://github.com/wallekuang/BlueNRG-1-2_Static_Static
 
  BlueNRG-LP使用静态协议栈参考Demo：
 
-将在SDK1.0.1更新后再更新。
+将在SDK1.0.1正式发布后再更新。
+
+
+
+**静态协议栈分多个工程，如果您只想简单使用，不做其他定制化的修改，并不想深入了解，可以直接复用上述给出的工程，然后只需要支配您自己的应用工程即可。**
 
 
 
 # 背景
 
-> 在使用BlueNRG-LP调试的时候，有时遇到Flash空间不够的问题，如果应用还需要包含OTA，如果OTA中又包含协议栈，为了解决Flash空间不够这个问题，我推荐使用静态协议栈的方式，节省空间，加速OTA的升级过程。
+> 在使用BlueNRG-LP调试的时候，有时遇到Flash空间不够的问题，可能应用还需要包含OTA，可能OTA中又包含协议栈。为了解决Flash空间不够这个问题，推荐使用静态协议栈的方式，节省空间，加速OTA的升级过程。
 
 # 知识背景须知
-> 下文描述具体的操作，我默认你已经知晓ST 官方的BlueNRG-xx 基本开发环境搭建和OTA基本知识，ST官方提供比较多类型的OTA方式，详细请自行看官方文档《AN4869 Application note The BlueNRG-1, BlueNRG-2 BLE OTA (over-the-air) firmware upgrade.pdf》
-> 或者《AN5463 Application note The BlueNRG-LP (over-the-air) firmware upgrade.pdf》。
+> 下文描述具体的操作，默认您已经知晓ST 官方的BlueNRG-x 基本开发环境搭建和知晓OTA基本知识，ST官方提供比较多类型的OTA方式，详细请自行看官方文档 [BLE Over Ther Air Firmware Upgrade (AN4869) ](https://www.st.com/resource/en/application_note/dm00293821.pdf)或者[Bluetooth LE Over Ther Air Firmware Upgrade (AN5463) ](https://www.st.com/resource/en/application_note/dm00691320-the-bluenrglp-ota-overtheair-firmware-upgrade-stmicroelectronics.pdf)。
 
 > 温馨提示:**请使用最新版本SDK进行开发**
 
 # 搭建静态协议栈环境
 > ST官方SDK中已经提供了静态协议栈的Demo:
 
-+ C:\Users\Lucien\ST\BlueNRG-LP DK 1.0.0\Projects\BLE_Examples\BLE_StaticStack
++ C:\Users\user name\ST\BlueNRG-LP DK 1.x.x\Projects\BLE_Examples\BLE_StaticStack
 
     + Release
 
     + OTA_BTL_ResetManager
 
-+ C:\Users\Lucien\ST\BlueNRG-LP DK 1.0.0\Projects\BLE_Examples\BLE_SensorDemo_StaticStack
++ C:\Users\user name\ST\BlueNRG-LP DK 1.x.0\Projects\BLE_Examples\BLE_SensorDemo_StaticStack
 
     + Release
 
@@ -72,8 +79,10 @@ https://github.com/wallekuang/BlueNRG-1-2_Static_Static
   + APP 客户应用程序，这块可使用的大小可以根据实际使用BLE Stack size进行调整，后面会描述调整的方法
 
 ## 具体操作和分析
-    下面我们一步一步，一个工程一个工程调试，从“基本的协议栈+app”到“支持应用OTA的协议栈+app”再到“支持协议栈OTA和支持应用OTA的静态协议栈Demo".我主要给出基于Keil 优化分析过程，IAR的操作类似，相对更简单一些，可以同样类比过去。
+下面我们一步一步，一个工程一个工程调试，从“基本的协议栈+app”到“支持应用OTA的协议栈+app”再到“支持协议栈OTA和支持应用OTA的静态协议栈Demo".我主要给出基于Keil 优化分析过程，IAR的操作类似，相对更简单一些，可以同样类比过去。
+
 ### 更改BLE_MultipleConnections为静态协议栈版本
+
 1. 编译生成静态协议栈: BlueNRG-LP DK 1.0.0\Projects\BLE_Examples\BLE_StaticStack
     编译成功后，会在目录BlueNRG-LP DK 1.0.0\Middlewares\ST\Bluetooth_LE\library\static_stack下生成libbluenrg_lp_static_stack.a文件，这里Keil 和IAR都一样，但想要成功编译并且生成static_stack下生成libbluenrg_lp_static_stack.a 需要使用安装arm-none-eabi工具链，none表示不带操作系统（普通的RTOS不算在这类操作系统中，这里主要是稍微大型一些的如Linux操作系统）。工具链请自行到GNU官网上下载，安装好后，然后设置环境变量.
 

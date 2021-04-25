@@ -39,6 +39,8 @@
 
   - [如何优化BlueNRG-x的功耗](Application/功耗优化/如何优化BlueNRG-x的功耗.md)
   - [基于BLE多连接的星型网络应用](Application/Multiple_connection/基于BLE多连接的星型网络应用.md) 
+
+   - [BlueNRG系列存储分析(Flash_and_RAM)](Application/BlueNRG系列如何使用静态协议栈/BlueNRG系列存储分析(Flash_and_RAM).MD) 
   - [BlueNRG系列如何使用静态协议栈](Application/BlueNRG系列如何使用静态协议栈/BlueNRG系列如何使用静态协议栈.MD)
   - [BlueNRG系列的OTA](Application/OTA/BlueNRG-x系列官方OTA操作简介.md)
   - BlueNRG系列协处理器介绍
