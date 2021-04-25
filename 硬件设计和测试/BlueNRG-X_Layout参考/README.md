@@ -4,8 +4,8 @@ BlueNRG-1/2 和BlueNRG-LP的硬件layout资料，仅供参考！
 
 - BlueNRG-1/2的layout参考：
 
-  - [STEVAL-IDB007V1](BlueNRG-1_2_Layout_Reference/STEVAL-IDB007V1.7z)
-  - [STEVAL-IDB008V1](BlueNRG-1_2_Layout_Reference/STEVAL-IDB008V1.7z)
+  - [STEVAL-IDB007V1](BlueNRG-1_2_Layout_Reference/STEVAL-IDB007V1.7z)  //BlueNRG-1开发板源文件
+  - [STEVAL-IDB008V1](BlueNRG-1_2_Layout_Reference/STEVAL-IDB008V1.7z)  //BlueNRG-2开发板源文件
 
 - BlueNRG-LP的layout参考（天线部分和封装部分可以分开参考）：
 
