@@ -25,7 +25,7 @@ https://github.com/wallekuang/BlueNRG_Demo/tree/master/BlueNRG-1_2%20DK%203.1.0/
 由于目录中存在字模块，如果需要下载全部源码，记得加上--recursive选项
 
 ```shell
-git clone --recursive  https://github.com/STMicroelectronics/STBlueMS_Android 
+git clone --recurse-submodules https://github.com/STMicroelectronics/STBlueMS_Android 
 ```
 
 ​    如果只是需要下载apk，可以在源码的Tags目录中下载最新Release的版本。可以科学上网或者香港的朋友可以直接从Google play中下载。
