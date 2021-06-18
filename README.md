@@ -10,7 +10,7 @@
     - 5.一些典型应用的参考设计。
 - 建议尽可能使用最新版本的SDK。
 - 文档主要是用markdown格式编写的，可以使用VScode或者Typora等支持markdown格式的编辑器打开。
-- 建议大陆用户将整个仓库clone下来查看，部分图片信息如果没有科学上网
+- 建议大陆用户使用这个链接: https://gitee.com/lucienkuang/BlueNRG-x-documentation
   或者没有更改host，可能无法直接在线加载查看到图片信息。
 - 下载与更新：
   - 下载: git clone https://github.com/wallekuang/BlueNRG-x-documentation.git
