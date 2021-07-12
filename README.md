@@ -1,5 +1,8 @@
 # BlueNRG-x-documentation
 
+
+# 建议转到链接：https://gitee.com/lucienkuang/BlueNRG-x-documentation
+
 ## 前言 
 - 本仓库是由个人维护的一个ST BlueNRG系列（BLE芯片）非正式文档的主页。
   主要包含： 
